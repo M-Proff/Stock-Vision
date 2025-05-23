@@ -1,8 +1,18 @@
-node_modules/
+# Ignore node modules everywhere
 **/node_modules/
-.env
-.DS_Store
+
+# Ignore build and cache folders
+**/.cache/
+**/dist/
+**/.next/
+**/build/
+
+# Ignore environment and log files
+*.env
 *.log
-.cache/
-dist/
-build/
+
+# Ignore system files
+.DS_Store
+
+# Optional: VS Code settings
+.vscode/
