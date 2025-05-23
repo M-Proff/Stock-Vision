@@ -2,105 +2,148 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer style={{ backgroundColor: "rgb(250, 250, 250)" }}>
-      <div className="container border-top mt-5">
-        <div className="row mt-5">
-          <div className="col">
-            <img src="media/images/logo.svg" style={{ width: "50%" }} />
+    <>
+      <style>{`
+        footer.footer {
+          background-color: #1e293b; /* dark slate navy */
+          color: #cbd5e1; /* soft light slate */
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          padding: 50px 20px 30px;
+          border-top: 3px solid #0ea5e9; /* bright sky blue line */
+          user-select: none;
+        }
+
+        .footer-container {
+          max-width: 1200px;
+          margin: 0 auto;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          gap: 40px;
+        }
+
+        .footer-section {
+          flex: 1 1 220px;
+          min-width: 220px;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .footer-logo {
+          width: 130px;
+          margin-bottom: 25px;
+          filter: brightness(0) invert(1); /* invert logo colors for dark bg */
+          user-select: none;
+        }
+
+        .footer-section h5 {
+          font-weight: 700;
+          font-size: 18px;
+          margin-bottom: 20px;
+          color: #7dd3fc; /* light sky blue for headings */
+          text-transform: uppercase;
+          letter-spacing: 0.08em;
+        }
+
+        .footer-section ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          line-height: 2.2;
+        }
+
+        .footer-section ul li a {
+          color: #cbd5e1;
+          text-decoration: none;
+          font-size: 15px;
+          transition: color 0.3s ease, transform 0.2s ease;
+          user-select: text;
+        }
+
+        .footer-section ul li a:hover,
+        .footer-section ul li a:focus {
+          color: #0ea5e9;
+          transform: translateX(5px);
+          outline: none;
+        }
+
+        .footer-copy {
+          margin-top: 40px;
+          font-size: 13px;
+          color: #94a3b8; /* muted gray-blue */
+          text-align: center;
+          max-width: 900px;
+          margin-left: auto;
+          margin-right: auto;
+          line-height: 1.5;
+          user-select: text;
+        }
+
+        /* Responsive: stack vertically on small */
+        @media (max-width: 768px) {
+          .footer-container {
+            flex-direction: column;
+            gap: 35px;
+          }
+          .footer-section {
+            min-width: auto;
+          }
+          .footer-logo {
+            margin: 0 auto 20px auto;
+          }
+        }
+      `}</style>
+
+      <footer className="footer" role="contentinfo" aria-label="Footer">
+        <div className="footer-container">
+          <div className="footer-section" aria-label="Company Info">
+            <img
+              src="media/images/logo.svg"
+              alt="Company Logo"
+              className="footer-logo"
+              draggable="false"
+            />
             <p>
-              &copy; 2010 - 2024, Not Zerodha Broking Ltd. All rights reserved.
+              &copy; 2010 - 2024. All rights reserved.
             </p>
           </div>
-          <div className="col">
-            <p>Company</p>
-            <a href="">About</a>
-            <br />
-            <a href="">Products</a>
-            <br />
-            <a href="">Pricing</a>
-            <br />
-            <a href="">Referral programme</a>
-            <br />
-            <a href="">Careers</a>
-            <br />
-            <a href="">Zerodha.tech</a>
-            <br />
-            <a href="">Press & media</a>
-            <br />
-            <a href="">Zerodha cares (CSR)</a>
-            <br />
-          </div>
-          <div className="col">
-            <p>Support</p>
-            <a href="">Contact</a>
-            <br />
-            <a href="">Support portal</a>
-            <br />
-            <a href="">Z-Connect blog</a>
-            <br />
-            <a href="">List of charges</a>
-            <br />
-            <a href="">Downloads & resources</a>
-            <br />
-          </div>
-          <div className="col">
-            <p>Account</p>
-            <a href="">Open an account</a>
-            <br />
-            <a href="">Fund transfer</a>
-            <br />
-            <a href="">60 day challenge</a>
-            <br />
-          </div>
+
+          <nav className="footer-section" aria-label="Company Links">
+            <h5>Company</h5>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Referral Programme</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </nav>
+
+          <nav className="footer-section" aria-label="Support Links">
+            <h5>Support</h5>
+            <ul>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Support Portal</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Resources</a></li>
+            </ul>
+          </nav>
+
+          <nav className="footer-section" aria-label="Account Links">
+            <h5>Account</h5>
+            <ul>
+              <li><a href="#">Open an Account</a></li>
+              <li><a href="#">Fund Transfer</a></li>
+              <li><a href="#">Challenges</a></li>
+            </ul>
+          </nav>
         </div>
-        <div className="mt-5 text-muted" style={{ fontSize: "14px" }}>
-          <p>
-            Zerodha Broking Ltd.: Member of NSE​ &​ BSE – SEBI Registration no.:
-            INZ000031633 CDSL: Depository services through Zerodha Securities
-            Pvt. Ltd. – SEBI Registration no.: IN-DP-100-2015 Commodity Trading
-            through Zerodha Commodities Pvt. Ltd. MCX: 46025 – SEBI Registration
-            no.: INZ000038238 Registered Address: Zerodha Broking Ltd.,
-            #153/154, 4th Cross, Dollars Colony, Opp. Clarence Public School,
-            J.P Nagar 4th Phase, Bengaluru - 560078, Karnataka, India. For any
-            complaints pertaining to securities broking please write to
-            complaints@zerodha.com, for DP related to dp@zerodha.com. Please
-            ensure you carefully read the Risk Disclosure Document as prescribed
-            by SEBI | ICF
-          </p>
 
-          <p>
-            Procedure to file a complaint on SEBI SCORES: Register on SCORES
-            portal. Mandatory details for filing complaints on SCORES: Name,
-            PAN, Address, Mobile Number, E-mail ID. Benefits: Effective
-            Communication, Speedy redressal of the grievances
-          </p>
-
-          <p>
-            Investments in securities market are subject to market risks; read
-            all the related documents carefully before investing.
-          </p>
-
-          <p>
-            "Prevent unauthorised transactions in your account. Update your
-            mobile numbers/email IDs with your stock brokers. Receive
-            information of your transactions directly from Exchange on your
-            mobile/email at the end of the day. Issued in the interest of
-            investors. KYC is one time exercise while dealing in securities
-            markets - once KYC is done through a SEBI registered intermediary
-            (broker, DP, Mutual Fund etc.), you need not undergo the same
-            process again when you approach another intermediary." Dear
-            Investor, if you are subscribing to an IPO, there is no need to
-            issue a cheque. Please write the Bank account number and sign the
-            IPO application form to authorize your bank to make payment in case
-            of allotment. In case of non allotment the funds will remain in your
-            bank account. As a business we don't give stock tips, and have not
-            authorized anyone to trade on behalf of others. If you find anyone
-            claiming to be part of Zerodha and offering such services, please
-            create a ticket here.
-          </p>
-        </div>
-      </div>
-    </footer>
+        <p className="footer-copy" tabIndex="0">
+          Investments in securities market are subject to market risks. Please read all related documents carefully before investing.
+        </p>
+      </footer>
+    </>
   );
 }
 
