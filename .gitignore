@@ -10,6 +10,7 @@
 # Ignore environment and log files
 *.env
 *.log
+.env
 
 # Ignore system files
 .DS_Store
