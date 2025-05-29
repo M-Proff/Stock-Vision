@@ -39,7 +39,7 @@ function Signup() {
 
     // Delay redirect so user sees success message
     setTimeout(() => {
-      window.location.href = "http://localhost:3000"; // Change this to your dashboard URL
+      window.location.href = "https://stock-vision-53yg-4tri9g0cl-rishits-projects-f3f9245f.vercel.app/"; // Change this to your dashboard URL
     }, 1500);
 
     // Reset form after submission
