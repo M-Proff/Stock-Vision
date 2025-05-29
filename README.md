@@ -15,7 +15,7 @@
 ![Portfolio](screenshots/portfolio.png)
 
 ### 📈 Stock Charts
-![Charts](screenshots/charts.png)
+![Charts](charts.png)
 
 ### 📈 Front-End
 ![Charts](screenshots/charts.png)
