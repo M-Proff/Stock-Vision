@@ -6,7 +6,7 @@
 
 ## 🖼️ Screenshots
 
-> Showcase the key screens of your platform for immediate impact.
+
 
 ### 📊 Dashboard View After Signup
 ![Dashboard](dashboard.png)
@@ -21,9 +21,7 @@
 ### 📈 Front-End
 ![Charts](frontend.png)
 
-> _🖼️ Place your images inside a `screenshots/` folder. Use clear UI images to catch recruiter attention!_
 
----
 
 ## 🚀 Live Demo
 
