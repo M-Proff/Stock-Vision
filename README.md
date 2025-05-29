@@ -8,7 +8,7 @@
 
 > Showcase the key screens of your platform for immediate impact.
 
-### 📊 Dashboard View
+### 📊 Dashboard View After Signup
 ![Dashboard](screenshots/dashboard.png)
 
 ### 💼 Portfolio Overview
