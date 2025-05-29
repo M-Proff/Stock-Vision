@@ -1,7 +1,7 @@
 # 📈 Stock Vision
 
 > A full-stack stock trading simulation platform with real-time dashboards, interactive analytics, and seamless trading experience. Built using the **MERN stack** + **Chart.js**, it empowers users to simulate real market decisions and track portfolio performance.
->  LIVE LINK: (https://stock-vision-7kotgbk8s-rishits-projects-f3f9245f.vercel.app/)
+>  LIVE LINK: [(https://stock-vision-7kotgbk8s-rishits-projects-f3f9245f.vercel.app/)](https://stock-vision-rnluiqsa0-rishits-projects-f3f9245f.vercel.app/)
              
 ---
 
@@ -27,7 +27,7 @@
 ## 🚀 Live Demo
 
 **Frontend Deployed Here:**  
-🔗 [Stock Vision (Vercel)](https://stock-vision-7kotgbk8s-rishits-projects-f3f9245f.vercel.app/)
+🔗 [Stock Vision (Vercel)]([https://stock-vision-7kotgbk8s-rishits-projects-f3f9245f.vercel.app/](https://stock-vision-rnluiqsa0-rishits-projects-f3f9245f.vercel.app/))
 
 ---
 
