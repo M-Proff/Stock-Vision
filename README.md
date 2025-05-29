@@ -17,6 +17,9 @@
 ### 📈 Stock Charts
 ![Charts](screenshots/charts.png)
 
+### 📈 Front-End
+![Charts](screenshots/charts.png)
+
 > _🖼️ Place your images inside a `screenshots/` folder. Use clear UI images to catch recruiter attention!_
 
 ---
